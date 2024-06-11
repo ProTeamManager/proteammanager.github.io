@@ -1,0 +1,14 @@
+{
+  "name": "proteammanagerfrontend",
+  "version": "0.0.2",
+  "description": "Football Team Manager",
+  "main": "./serve.js",
+  "repository": "https://github.com/ProTeamManager/proteammanager.github.io.git",
+  "author": "pedroall <cttpedroall@gmail.com>",
+  "license": "AGPL",
+  "private": true,
+  "devDependencies": {
+    "serve": "^14.2.3"
+  },
+  "dependencies": {}
+}
