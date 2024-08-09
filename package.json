@@ -8,7 +8,13 @@
   "license": "AGPL",
   "private": true,
   "devDependencies": {
-    "serve": "^14.2.3"
+    "sass": "^1.77.4",
+    "serve-handler": "^6.1.5"
+  },
+  "scripts": {
+    "build": "rm -rf build && mkdir build && mkdir build/scripts && mkdir build/styles && mkdir build/images && cp -r ProTeamManager/pages build && cp -r ProTeamManager/scripts build/scripts && cp -r ProTeamManager/images build/images && yarn sass ProTeamManager/styles/styles.sass build/styles/styles.css",
+	"start": "node serve.js",
+	"build-release": "mv build/* ./ && mv pages/* ./"
   },
   "dependencies": {}
 }
