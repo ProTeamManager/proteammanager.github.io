@@ -1,0 +1,26 @@
+{
+  "name": "proteammanagerbackend",
+  "version": "0.0.1",
+  "description": "Pro Team Manager Server",
+  "main": "build/server.js",
+  "repository": "https://github.com/ProTeamManager/proteammanager.github.io",
+  "author": "pedroall <cttpedroall@gmail.com>",
+  "license": "AGPL",
+  "private": true,
+  "devDependencies": {
+    "@types/node": "^20.14.2",
+    "prisma": "^5.18.0",
+    "ts-sql-plugin": "^0.10.1",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.21",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "postgres": "^3.4.4"
+  },
+  "scripts": {
+    "start": "node build/server.js",
+    "build": "yarn tsc"
+  }
+}
