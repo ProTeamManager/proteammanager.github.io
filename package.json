@@ -14,7 +14,8 @@
   "scripts": {
     "build": "rm -rf build && mkdir build && mkdir build/scripts && mkdir build/styles && mkdir build/images && cp -r ProTeamManager/pages build && cp -r ProTeamManager/scripts build/scripts && cp -r ProTeamManager/images build/images && yarn sass ProTeamManager/styles/styles.sass build/styles/styles.css",
 	"start": "node serve.js",
-	"build-release": "mv build/* ./ && mv pages/* ./"
+	"build-release": "mv build/* ./ && mv pages/* ./",
+	"clear": "rm -rf build pages styles scripts images index.html login.html"
   },
   "dependencies": {}
 }
